@@ -16,11 +16,18 @@ public class WelcomeActivity extends AppCompatActivity {
         login = (Button)findViewById(R.id.welcome_login);
         signup = (Button)findViewById(R.id.welcome_signup);
         final Intent i = new Intent(this, LoginActivity.class);
+        final Intent j = new Intent(this,SignupActivity.class);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(i);
+            }
+        });
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(j);
             }
         });
     }
