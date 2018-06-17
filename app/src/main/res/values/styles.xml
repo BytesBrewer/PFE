@@ -15,4 +15,15 @@
         <item name="colorPrimaryDark">@color/d_Red</item>
     </style>
 
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/l_Blue</item>
+        <item name="colorPrimaryDark">@color/l_Blue</item>
+    </style>
+
+    <!--Needed for navigation drawer-->
+    <style name="MainTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>

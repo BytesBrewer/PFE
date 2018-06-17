@@ -15,7 +15,8 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
         login = (Button)findViewById(R.id.welcome_login);
         signup = (Button)findViewById(R.id.welcome_signup);
-        final Intent i = new Intent(this, LoginActivity.class);
+        //change MainActivity to LoginActivity Intent i
+        final Intent i = new Intent(this, MainActivity.class);
         final Intent j = new Intent(this,SignupActivity.class);
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -31,4 +32,6 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
